@@ -13,6 +13,25 @@
 # that reads "YOU LOSE!", otherwise, write a message that
 # reads "THE POINT IS {number}"
 
+die1 = rand(1..6)
+puts "Die 1: #{die1}"
+
+die2 = rand(1..6)
+puts "Die 2: #{die2}"
+
+total = die1 + die2
+puts "The Total Is: #{total}"
+
+# the above was copy and pasted from before. The bottom elsif conditional uses the "or" feature of || to give outputs
+if total == 7 || total == 11
+    puts "YOU WIN!"
+elsif total == 2 || total == 3 || total == 12
+    puts "YOU LOSE!"
+else
+    puts "THE POINT IS #{total}"
+end
+
+
 # HINTS
 # Get a random number between 1 and 6 by doing:
 # rand(1..6)
