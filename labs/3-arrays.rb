@@ -2,6 +2,17 @@
 # is the same as where this file is located and then run:
 # ruby 3-arrays.rb
 
+my_shopping_list = ["milk", "eggs", "bacon"]
+
+friends_shopping_list = ["beer", "cookies", "apples"]
+
+shopping_list = my_shopping_list + friends_shopping_list 
+
+shopping_list.push("beer")
+
+puts shopping_list.uniq.sort
+
+
 # EXERCISE
 # Create a "shared" shopping list with a friend
 # Create two data structures - one for your list of stuff, and one
