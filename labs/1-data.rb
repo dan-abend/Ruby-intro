@@ -10,11 +10,17 @@
 # then write them out to the screen. Show the total
 # as well.
 
-roll1 = rand(1..6)
-roll2 = rand(1..6)
-puts "Roll 1: #{roll1}"
-puts "Roll 1: #{roll2}"
-puts "Total: #{roll1 + roll2}"
+# set the first die and write it to the screen
+die1 = rand(1..6)
+puts "Die 1: #{die1}"
+
+# set the second die and write it to the screen
+die2 = rand(1..6)
+puts "Die 2: #{die2}"
+
+#output the total using a variable for future simplicity
+total = die1 + die2
+puts "The Total Is: #{total}"
 
 # HINTS
 # Get a random number between 1 and 6 by doing:
